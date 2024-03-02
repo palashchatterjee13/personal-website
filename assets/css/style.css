@@ -192,6 +192,26 @@ h6 {
   margin: 0;
 }
 
+.scroll {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: transparent;
+  transform: translateX(-50%);
+  padding: 5px 30px;
+  border-radius: 15px;
+  border: 1px solid white;
+  color: white;
+  opacity: 1;
+  animation: fade 2s linear infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
 @media (max-width: 768px) {
   #header.header-top {
     height: 60px;

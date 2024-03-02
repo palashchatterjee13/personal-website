@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -40,7 +40,7 @@
    */
   const scrollto = (el) => {
     window.scrollTo({
-      top: (el === 0)? 0 : document.querySelector(el).getBoundingClientRect().top,
+      top: (el === 0) ? 0 : document.querySelector(el).getBoundingClientRect().top,
       behavior: 'smooth'
     })
   }
@@ -48,7 +48,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -57,7 +57,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '#navbar .nav-link', function(e) {
+  on('click', '#navbar .nav-link', function (e) {
     let section = select(this.hash)
     if (section) {
       // e.preventDefault()
@@ -112,7 +112,13 @@
    * Activate/show sections on load with hash links
    */
   window.addEventListener('load', () => {
-    
+    window.addEventListener('scroll', () => {
+      var doc = document.documentElement;
+      var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+      if (top >= window.innerHeight / 2.2) {
+        select('.scroll')?.remove();
+      }
+    })
   });
 
   /**
@@ -123,7 +129,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -174,9 +180,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
