@@ -320,6 +320,11 @@ h6 {
   .navbar ul {
     display: none;
   }
+
+  
+  .scroll {
+    bottom: 10.5% !important;
+  }
 }
 
 .navbar-mobile {
