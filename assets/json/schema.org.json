@@ -1,0 +1,112 @@
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": [
+                "Person",
+                "Organization"
+            ],
+            "@id": "https://palashchatterjee.in/#about",
+            "name": "Palash Chatterjee",
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://palashchatterjee.in/#logo",
+                "url": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg",
+                "contentUrl": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg",
+                "caption": "Palash Chatterjee",
+                "inLanguage": "en-US",
+                "width": "1600",
+                "height": "1600"
+            },
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://palashchatterjee.in/#logo",
+                "url": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg",
+                "contentUrl": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg",
+                "caption": "Palash Chatterjee",
+                "inLanguage": "en-US",
+                "width": "1600",
+                "height": "1600"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://palashchatterjee.in/#website",
+            "url": "https://palashchatterjee.in",
+            "name": "Palash Chatterjee",
+            "publisher": {
+                "@id": "https://palashchatterjee.in/#about"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://palashchatterjee.in/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg?fit=1600%2C1600&amp;ssl=1",
+            "url": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg?fit=1600%2C1600&amp;ssl=1",
+            "width": "1600",
+            "height": "1600",
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://palashchatterjee.in/#webpage",
+            "url": "https://palashchatterjee.in/",
+            "name": "Palash Chatterjee - AI Visionary &amp; Enthusiast",
+            "datePublished": "2024-05-30T01:30:25+05:30",
+            "dateModified": "2024-05-30T01:30:25+05:30",
+            "about": {
+                "@id": "https://palashchatterjee.in/#about"
+            },
+            "isPartOf": {
+                "@id": "https://palashchatterjee.in/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg?fit=1600%2C1600&amp;ssl=1"
+            },
+            "inLanguage": "en-US"
+        },
+        {
+            "@type": "Person",
+            "@id": "https://palashchatterjee.in/#author",
+            "name": "Palash Chatterjee",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg",
+                "url": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg",
+                "caption": "Palash Chatterjee",
+                "inLanguage": "en-US"
+            }
+        },
+        {
+            "@type": "Article",
+            "headline": "Palash Chatterjee - AI Visionary &amp; Enthusiast",
+            "keywords": "Palash Chatterjee",
+            "datePublished": "2024-05-30T01:30:25+05:30",
+            "dateModified": "2024-05-30T01:30:25+05:30",
+            "author": {
+                "@id": "https://palashchatterjee.in/#author"
+            },
+            "publisher": {
+                "@id": "https://palashchatterjee.in/#about"
+            },
+            "description": "Welcome to the Palash Chatterjee personal space. Palash is the Co-Lead For Google Developer Student Clubs, and is in love with artificial intelligence and web development.",
+            "name": "Palash Chatterjee - AI Visionary &amp; Enthusiast",
+            "@id": "https://palashchatterjee.in/#richSnippet",
+            "isPartOf": {
+                "@id": "https://palashchatterjee.in/#webpage"
+            },
+            "image": {
+                "@id": "https://palashchatterjee.in/assets/img/palash-chatterjee.jpg?fit=1600%2C1600&amp;ssl=1"
+            },
+            "inLanguage": "en-US",
+            "mainEntityOfPage": {
+                "@id": "https://palashchatterjee.in/#webpage"
+            }
+        }
+    ]
+}

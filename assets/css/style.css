@@ -208,8 +208,15 @@ h6 {
 }
 
 @keyframes fade {
-  0%,100% { opacity: 0 }
-  50% { opacity: 1 }
+
+  0%,
+  100% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1
+  }
 }
 
 @media (max-width: 768px) {
@@ -321,7 +328,7 @@ h6 {
     display: none;
   }
 
-  
+
   .scroll {
     bottom: 10.5% !important;
   }
@@ -914,6 +921,9 @@ section .container {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
+  width: 80%;
+  left: 10%;
+  position: relative;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
