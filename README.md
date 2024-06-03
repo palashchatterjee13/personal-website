@@ -21,5 +21,5 @@ This repository contains the source code for my personal website. As a Computer 
 For any questions or inquiries, feel free to reach out to me:
 
 - Email: palashchatterjeeofficial@gmail.com
-- LinkedIn: [Palash Chatterjee](https://www.linkedin.com/in/palash-chatterjee-3730a9261/)
+- LinkedIn: [Palash Chatterjee](https://www.linkedin.com/in/palashchatterjee13)
 - Website: [Website](https://palashchatterjee13.github.io/portfolio/)
