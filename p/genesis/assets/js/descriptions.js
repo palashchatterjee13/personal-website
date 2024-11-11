@@ -74,11 +74,6 @@ const descriptions = {
         linkedin: `www.linkedin.com/in/karishma-jethwani-23b15b289`,
         instagram: `https://www.instagram.com/karishma.jethwani_/`,
     },
-    "DakshGupta": {
-        paragraph: "Hello, I'm Daksh Gupta, a B.Tech student in Computer Science and Engineering with a strong passion for Artificial Intelligence. My academic journey is deeply rooted in exploring the vast potentials of AI and its transformative capabilities. I am eager to connect with like-minded individuals and explore collaborative opportunities in AI and technology. Connect with me as I share my insights, projects, and experiences on this exciting journey.",
-        linkedin: `https://www.linkedin.com/in/dg-guptadaksh`,
-        instagram: `https://www.instagram.com/dg_guptadaksh/`,
-    },
     "ManikaSingh": {
         paragraph: "I'm Manika Singh, a passionate and creative individual currently pursuing a bachelor's degree in technology in computer science at the Birla Institute of Technology, Mesra. I have always loved working in a lively environment where creativity meets organization. Apart from my academic pursuits, I am fascinated by coding and enjoy learning new programming languages. Graphic design is another art form that I find captivating. <br /> <br /> I believe in continuous learning, always looking for opportunities to grow, and constantly refining my skills to create a positive impact and contribute meaningfully to projects that are aligned with my values.",
         linkedin: `https://www.linkedin.com/in/manika-singh-b7452b290`,

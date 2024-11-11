@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Palash Cahtterjee's interactive resume</title>
+
+        <!-- libraries -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap"
+            rel="stylesheet"
+        />
+ 
+        <!-- js -->
+        <script src="js/values.js"></script>
+        <script src="js/types.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/main.js"></script>
+
+        <style>
+            :root {
+                --color-loader: royalblue;
+            }
+            .loaderWrap {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                background: #1b2227;
+                right: 0;
+                bottom: -5px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                overflow: hidden;
+            }
+            .loader {
+                font-size: 48px;
+                color: #fff;
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                position: relative;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            .loader:after {
+                content: "Loading";
+                position: relative;
+                z-index: 5;
+            }
+            .loader:before {
+                content: "";
+                height: 6px;
+                border: 1px solid;
+                border-radius: 10px;
+                width: 100%;
+                position: absolute;
+                bottom: -20px;
+                background: linear-gradient(var(--color-loader) 100%, transparent 0)
+                    no-repeat;
+                background-size: 0% auto;
+                animation: 3s lineGrow linear infinite;
+            }
+
+            @keyframes lineGrow {
+                to {
+                    background-size: 100% auto;
+                }
+            }
+        </style>
+
+        
+        <!-- css -->
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div class="game-box"></div>
+        <div class="controls">
+            <div
+                class="button backward"
+                ontouchstart="TouchControls.moveBackward()"
+                ontouchend="TouchControls.stop()"
+                ontouchcancel="TouchControls.stop()"
+            >
+                <i class="bi bi-caret-left-fill"></i>
+            </div>
+            <div
+                class="button forward"
+                ontouchstart="TouchControls.moveForward()"
+                ontouchend="TouchControls.stop()"
+                ontouchcancel="TouchControls.stop()"
+            >
+                <i class="bi bi-caret-right-fill"></i>
+            </div>
+        </div>
+        <div class="message">use arrow keys to move</div>
+        <div class="loaderWrap">
+            <span class="loader"></span>
+        </div>
+    </body>
+</html>

@@ -6,20 +6,20 @@ This repository contains the source code for my personal website. As a Computer 
 
 ## Features
 
-- Detailed sections highlighting my skills and expertise.
-- Showcase of projects I've worked on.
-- Contact information.
+-   Detailed sections highlighting my skills and expertise.
+-   Showcase of projects I've worked on.
+-   Contact information.
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+-   HTML
+-   CSS
+-   JavaScript
 
 ## Contact
 
 For any questions or inquiries, feel free to reach out to me:
 
-- Email: palashchatterjeeofficial@gmail.com
-- LinkedIn: [Palash Chatterjee](https://www.linkedin.com/in/palashchatterjee13)
-- Website: [Website](https://palashchatterjee13.github.io/portfolio/)
+-   Email: palashchatterjeeofficial@gmail.com
+-   LinkedIn: [Palash Chatterjee](https://www.linkedin.com/in/palashchatterjee13)
+-   Website: [Website](https://palashchatterjee13.github.io/portfolio/)
