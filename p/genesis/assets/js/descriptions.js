@@ -9,6 +9,16 @@ const descriptions = {
         linkedin: `https://www.linkedin.com/in/harshal-gupta-10a846250/`,
         instagram: `https://www.instagram.com/harguptaz/`,
     },
+    "RajveerMewara": {
+        paragraph: "Passionate aspiring developer with a deep love for coding and problem-solving. With a solid foundation in software development, I have consistently excelled in academics while actively participating in extracurricular activities. My journey includes hands-on experience with a diverse range of technical projects, hackathons, and event coordination. I am committed to continuous learning, innovation, and bringing creative solutions to the forefront.",
+        linkedin: `https://www.linkedin.com/in/rajveer-mewara/`,
+        instagram: `https://www.instagram.com/rajveer_mewaraa05/`,
+    },
+    "Shilpi": {
+        paragraph: "Hello i am Shilpi , with a passion for coding and problem-solving. I love collaborating with peers to bring creative ideas of life . Apart from this i am diving into full stack development. I love coding and exploring new technologies while also discovering my strengths and passions. I’m excited about building innovative projects and collaborating with others in the tech community",
+        linkedin: `https://www.linkedin.com/in/shilpi-singh-13a466258/`,
+        instagram: `https://www.instagram.com/singhhh__shilpi.23/`,
+    },
     "PreetiJaiswal": {
         paragraph: "Considering myself a formidable force at 20, confidently leading as the coordinator at Google Developer Student Club and earning a coveted spot in as a contributor in GirlScript Summer of Code 2024 with my exceptional presentation skills. My dedication knows no bounds as I navigate the tech landscape with finesse. Beyond coding I find solace in the art of poetry, channeling my creativity into captivating verses and putting forward everything going on in my chaotic mind. <br /> <br />Public speaking is my forte, commanding attention with every word I  utter. In my  leisure, I unravel the complexities of Rubik's cubes and crafts the perfect verbal comebacks, a testament to my sharp. I embodies strength, dedication, and a relentless pursuit of excellence.",
         linkedin: `https://www.linkedin.com/in/preeti-jaiswal2004`,
