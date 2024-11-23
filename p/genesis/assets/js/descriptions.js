@@ -135,17 +135,17 @@ const descriptions = {
         instagram: `https://www.instagram.com/singh_sarvocch`,
     },
     "MehakJha": {
-        paragraph: "I'm Mehak Jha, a student at Birla Institute of Technology, Mesra pursuing my Bachelor's degree in Artificial Intelligence. I'm eager to dive deeper into the world of AI and explore its vast possibilities. I'm a curious person, always looking for ways to improve my understanding of complex concepts. <br /><br />I developed my interest in coding when i saw different website and apps and how the were created and grew my love towards it. Apart from academics, I love participating in hackathons with different programming languages. I'm committed to learning and my passion for innovation and technology to make a meaningful contribution to dynamic projects.",
+        paragraph: "I'm Mehak Jha, a student at Birla Institute of Technology, Mesra pursuing my Bachelor's degree in Artificial Intelligence. I'm eager to dive deeper into the world of AI and explore its vast possibilities. I'm a curious person, always looking for ways to improve my understanding of complex concepts. <br /><br />I developed my interest in coding when i saw different website and apps and how they were created which grew my love towards it. Apart from academics, I love participating in hackathons with different programming languages. I'm committed to learning and my passion for innovation and technology to make a meaningful contribution to dynamic projects.",
         linkedin: `https://www.linkedin.com/in/mehak-jha-4a773a282`,
         instagram: `https://www.instagram.com/mehakjha15`,
     },
     "SomyaUpadhyay": {
         paragraph: " I am Somya Upadhyay, a committed and hardworking student presently pursuing a B.Tech in Computer Science and Engineering at Birla Institute of Technology in Mesra, Jaipur,. Discovering and becoming an expert is my passion. Being involved in the Google Developer Student Clubs (GDSC), I have a strong desire to learn new things and take advantage of opportunities to expand my knowledge and abilities.<br /><br /> My goal is to become a skilled software developer by constantly learning new things and keeping up with the most recent developments in technology. I like interacting with people around me because I think it helps me gain a better understanding of my surroundings to engage with people who have different perspectives. This exchange not only broadens my knowledge but also facilitates the application of what I've learned.",
-        linkedin: `www.linkedin.com/in/somya-upadhyay-720094280`,
-        instagram: `https://www.instagram.com/somyaaaaa23`,
+        linkedin: `https://www.linkedin.com/in/somya-upadhyay-720094280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+        instagram: `https://www.instagram.com/__.somyaaaaa__?igsh=cGJra2p6MmQyeWxw`,
     },
     "GaurikaVats": {
-        paragraph: "I am Gaurika Vats, student of Birla Institute of Technology, Mesra pursuing my Bachelor of Technology in Electronics and Communication Engineering. I love to explore the concepts of core electronics and ways to use AI to develop solutions for real life problems.",
+        paragraph: "I am Gaurika Vats, a Bachelor of Technology student specializing in Artificial Intelligence at Birla Institute of Technology, Mesra. I have a passion for delving into the core principles of Artificial Intelligence and Machine Learning algorithms, focusing on their practical application to solve real-world challenges. My background includes a solid proficiency in coding.",
         linkedin: `https://www.linkedin.com/in/gaurika-vats-92a2952a7`,
         instagram: `https://www.instagram.com/gaurikavats_1410`,
     },
@@ -170,8 +170,8 @@ const descriptions = {
         instagram: ``,
     },
     "YuvrajAgarwal": {
-        paragraph: "null",
-        linkedin: ``,
-        instagram: ``,
+        paragraph: "I, Yuvraj Agarwal, am a passionate tech enthusiast with a deep interest in artificial intelligence. Currently pursuing my B.Tech at BIT Jaipur, I am driven by a constant desire to learn and explore the latest advancements in AI. My curiosity and enthusiasm for innovation inspire me to contribute meaningfully to the field, challenging the limits of what is achievable. With a strong commitment to knowledge and excellence, I aspire to be at the forefront of AI innovation, shaping the future through my dedication and expertise. As I navigate the dynamic landscape of AI, I embrace new challenges and foster a culture of collaboration and creativity.",
+        linkedin: `https://www.linkedin.com/in/yuvraj-agarwal-a3172b294/`,
+        instagram: `https://www.instagram.com/_yuvraj_agarwal_?igsh=MW5hc2J5c3J0NG5nag==`,
     }
 }
