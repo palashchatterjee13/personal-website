@@ -165,9 +165,9 @@ const descriptions = {
         instagram: `https://www.instagram.com/_pratibhaa`,
     },
     "CharchitJain": {
-        paragraph: "null",
-        linkedin: ``,
-        instagram: ``,
+        paragraph: "",
+        linkedin: `https://www.linkedin.com/in/charchit-jain-7341342b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`,
+        instagram: `https://www.instagram.com/jncharchit.87/profilecard/?igsh=cm13enN0dnp6aXpr`,
     },
     "YuvrajAgarwal": {
         paragraph: "I, Yuvraj Agarwal, am a passionate tech enthusiast with a deep interest in artificial intelligence. Currently pursuing my B.Tech at BIT Jaipur, I am driven by a constant desire to learn and explore the latest advancements in AI. My curiosity and enthusiasm for innovation inspire me to contribute meaningfully to the field, challenging the limits of what is achievable. With a strong commitment to knowledge and excellence, I aspire to be at the forefront of AI innovation, shaping the future through my dedication and expertise. As I navigate the dynamic landscape of AI, I embrace new challenges and foster a culture of collaboration and creativity.",

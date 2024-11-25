@@ -302,6 +302,10 @@
               <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
+            <br />
+            <div class="social-links mt-3">
+              <a href="#" class="show-certificate" style="color: var(--theme-color);">Show Certificate</a>
+            </div>
           </div>
         </div>
 
@@ -414,6 +418,9 @@
       })
       $(".instagram").click(function () {
         window.open(descriptions[Name].instagram, "_blank")
+      })
+      $(".show-certificate").click(function () {
+        window.open(`media/certificates/${Name}.pdf`, "_blank")
       })
     })
   </script>
