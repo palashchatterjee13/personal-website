@@ -3473,7 +3473,7 @@ section,
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.85) 50%, rgba(0, 0, 0, 0) 100%);
   padding: 30px 20px 20px;
   opacity: 0;
   transform: translateY(20px);

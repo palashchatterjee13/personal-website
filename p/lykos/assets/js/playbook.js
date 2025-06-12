@@ -11,6 +11,10 @@ const Playbook = {
             {
                 name: "How to Get and Test Startup Ideas - Michael Seibel",
                 link: `vDXkpJw16os`
+            },
+            {
+                name: "Starting A Company? The Key Terms You Should Know | Startup School",
+                link: `wH3TKpALlw4`
             }
         ],
         documents: [
@@ -61,14 +65,22 @@ const Playbook = {
         evaluationLink: "",
         videos: [
             {
-                name: "Writing Problem Statements",
-                link: "",
+                name: "Startup Business Models and Pricing | Startup School",
+                link: "oWZbWzAyHAE",
+            },
+            {
+                name: "Business Model Canvas - A Guide for Beginners",
+                link: "LbbGRgGKSyg",
             }
         ],
         documents: [
             {
-                name: "Writing Problem Statements",
-                link: "",
+                name: "Business Model Canvas Template",
+                link: "https://docs.google.com/spreadsheets/d/19xxV16ZduTthwXyU1reCcliXPC8TYoYRxebt1bo5Xi4/edit?usp=sharing",
+            },
+            {
+                name: "Financial Projections Template",
+                link: "https://docs.google.com/spreadsheets/d/1Rqln22b5bW9RqWbZsF3rc9UTm0Ud_kQe/edit?usp=sharing&ouid=111158226983567097084&rtpof=true&sd=true",
             }
         ],
         tasks: [
@@ -100,16 +112,31 @@ const Playbook = {
         evaluationLink: "",
         videos: [
             {
-                name: "Writing Problem Statements",
-                link: "",
-            }
-        ],
-        documents: [
+                name: "Co-Founder Equity Mistakes to Avoid | Startup School",
+                link: "DISocTmEwiI",
+            },
             {
-                name: "Writing Problem Statements",
-                link: "",
+                name: "How to start a Business?",
+                link: "YDUYWC7Kf10",
+            },
+            {
+                name: "Proprietorship Firm Full Details",
+                link: "-TbmQymZ0iU",
+            },
+            {
+                name: "A to Z of Partnership Firm",
+                link: "ls7Ni3GqZrw",
+            },
+            {
+                name: "Ultimate Guide to Private Limited Company",
+                link: "pv8WjGeYVH0",
+            },
+            {
+                name: "Startups & IP",
+                link: "hegxh2SbZtE",
             }
         ],
+        documents: [],
         tasks: [
             {
                 icon: "people-fill",
@@ -154,16 +181,11 @@ const Playbook = {
         evaluationLink: "",
         videos: [
             {
-                name: "Writing Problem Statements",
-                link: "",
+                name: "Startup Branding 101 | Full Tutorial 2025",
+                link: "K6OOv63BY9E",
             }
         ],
-        documents: [
-            {
-                name: "Writing Problem Statements",
-                link: "",
-            }
-        ],
+        documents: [],
         tasks: [
             {
                 icon: "bullseye",
@@ -191,6 +213,11 @@ const Playbook = {
                 description: "Design business cards (physical or virtual) to help you pitch your brand professionally."
             },
             {
+                icon: "instagram",
+                name: "Setup social media profiles",
+                description: "Create social media accounts (like Instagram, LinkedIn, X, etc.) that align with your brand’s identity."
+            },
+            {
                 icon: "arrow-right-circle",
                 name: "Move to the next step",
                 description: "Now that your brand identity is ready, start building your MVP and testing it with users."
@@ -203,16 +230,11 @@ const Playbook = {
         evaluationLink: "",
         videos: [
             {
-                name: "Writing Problem Statements",
-                link: "",
+                name: "How to Build An MVP | Startup School",
+                link: "QRZ_l7cVzzU",
             }
         ],
-        documents: [
-            {
-                name: "Writing Problem Statements",
-                link: "",
-            }
-        ],
+        documents: [],
         tasks: [
             {
                 icon: "list-check",
@@ -237,14 +259,18 @@ const Playbook = {
         evaluationLink: "",
         videos: [
             {
-                name: "Writing Problem Statements",
-                link: "",
+                name: "How Pitching Investors is Different Than Pitching Customers",
+                link: "pQnOBHNKlgs",
+            },
+            {
+                name: "How To Perfectly Pitch Your Seed Stage Startup",
+                link: "lw2X3PxKlAY",
             }
         ],
         documents: [
             {
-                name: "Writing Problem Statements",
-                link: "",
+                name: "Sample Pitch Deck 1",
+                link: "https://docs.google.com/presentation/d/12oT8GjHOmlxlaCZ8x_F8i8OH6aumm3bj/edit?usp=sharing&ouid=111158226983567097084&rtpof=true&sd=true",
             }
         ],
         tasks: [
@@ -284,18 +310,8 @@ const Playbook = {
         name: "Funding Opportunities Identification",
         description: "Now that your pitch is ready, it’s time to explore funding opportunities. This step helps you find the right investors, prepare outreach material, and start meaningful fundraising conversations.",
         evaluationLink: "",
-        videos: [
-            {
-                name: "Writing Problem Statements",
-                link: "",
-            }
-        ],
-        documents: [
-            {
-                name: "Writing Problem Statements",
-                link: "",
-            }
-        ],
+        videos: [],
+        documents: [],
         tasks: [
             {
                 icon: "search",
@@ -337,12 +353,22 @@ const setStep = (step, stepName) => {
 
     $(".project-title").text(step?.name);
     $(".lead").html(step?.description);
-    $(".evaluation").html(`<a href=${step.evaluationLink}> Submit for Evaluation <i class="bi bi-arrow-up-right"></i> </a>`);
+
+    if (step?.evaluationLink?.length != 0) {
+        $(".evaluation").html(`<a href=${step.evaluationLink}> Submit for Evaluation <i class="bi bi-arrow-up-right"></i> </a>`);
+    } else {
+        $(".evaluation").html("No evaluations for this step");
+    }
 
     $(".templates, .tasks, .videos").html("");
 
-    for (let document of step.documents) {
-        $(".templates").append(`<a href=${document.link} target="_blank"> ${document.name}&nbsp;<i class="bi bi-arrow-up-right"></i> </a> <br />`);
+
+    if (step?.documents?.length != 0) {
+        for (let document of step.documents) {
+            $(".templates").append(`<a href=${document.link} target="_blank"> ${document.name}&nbsp;<i class="bi bi-arrow-up-right"></i> </a> <br />`);
+        }
+    } else {
+        $(".templates").html("No documents for this step.")
     }
 
     for (let task of step?.tasks) {
@@ -358,8 +384,9 @@ const setStep = (step, stepName) => {
 
     var videohtml = "";
 
-    for (let video of step?.videos) {
-        videohtml += `<div class="swiper-slide">
+    if (step?.videos?.length != 0) {
+        for (let video of step?.videos) {
+            videohtml += `<div class="swiper-slide">
             <a href="https://www.youtube.com/watch?v=${video?.link}" target="_blank">
                 <div class="portfolio-item">
                     <img src="https://img.youtube.com/vi/${video?.link}/mqdefault.jpg" alt="" class="img-fluid" loading="lazy">
@@ -369,9 +396,9 @@ const setStep = (step, stepName) => {
                 </div>
             </a>
         </div> `;
-    }
+        }
 
-    $(".videos").append(`<div class="service-gallery" data-aos="fade-up" data-aos-delay="300">
+        $(".videos").append(`<div class="service-gallery" data-aos="fade-up" data-aos-delay="300">
         <div class="service-details-slider swiper init-swiper">
             <script type="application/json" class="swiper-config">
             {
@@ -400,6 +427,7 @@ const setStep = (step, stepName) => {
             <div class="swiper-pagination"></div>
         </div>
         </div>`);
+    }
 
     function initSwiper() {
         document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
