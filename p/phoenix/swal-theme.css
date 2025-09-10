@@ -1,0 +1,338 @@
+/* SweetAlert2 Dark Theme - Matching Phoenix AI Design */
+
+/* Main popup container */
+.swal2-popup {
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+    border-radius: 24px !important;
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    color: #e2e8f0 !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Shimmer effect for popup */
+.swal2-popup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+    animation: swalShimmer 3s infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes swalShimmer {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* Title styling */
+.swal2-title {
+    color: #f8fafc !important;
+    font-weight: 600 !important;
+    font-family: 'Inter', sans-serif !important;
+    margin-bottom: 1.5rem !important;
+    background: linear-gradient(135deg, #f8fafc 0%, #3b82f6 50%, #8b5cf6 100%);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Content text */
+.swal2-html-container {
+    color: #cbd5e1 !important;
+    font-family: 'Inter', sans-serif !important;
+    line-height: 1.6 !important;
+}
+
+/* Success icon styling */
+.swal2-success {
+    border-color: rgba(16, 185, 129, 0.3) !important;
+}
+
+.swal2-success .swal2-success-circular-line-left,
+.swal2-success .swal2-success-circular-line-right {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+.swal2-success .swal2-success-ring {
+    border: 4px solid rgba(16, 185, 129, 0.3) !important;
+}
+
+.swal2-success .swal2-success-fix {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+.swal2-success [class^=swal2-success-line] {
+    background-color: #10b981 !important;
+    border-radius: 2px !important;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5) !important;
+}
+
+/* Error icon styling */
+.swal2-error {
+    border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+.swal2-error .swal2-x-mark {
+    position: relative !important;
+}
+
+.swal2-error [class^=swal2-x-mark-line] {
+    background-color: #ef4444 !important;
+    border-radius: 3px !important;
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.6) !important;
+    animation: errorGlow 2s ease-in-out infinite !important;
+}
+
+@keyframes errorGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 15px rgba(239, 68, 68, 0.6);
+        filter: brightness(1);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(239, 68, 68, 0.8);
+        filter: brightness(1.2);
+    }
+}
+
+/* Warning icon styling */
+.swal2-warning {
+    border-color: rgba(245, 158, 11, 0.3) !important;
+    color: #f59e0b !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.3) !important;
+}
+
+/* Info icon styling */
+.swal2-info {
+    border-color: rgba(59, 130, 246, 0.3) !important;
+    color: #3b82f6 !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Question icon styling */
+.swal2-question {
+    border-color: rgba(139, 92, 246, 0.3) !important;
+    color: #8b5cf6 !important;
+    font-weight: 600 !important;
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.3) !important;
+}
+
+/* Button styling */
+.swal2-actions {
+    margin-top: 2rem !important;
+    gap: 1rem !important;
+}
+
+.swal2-confirm {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 2rem !important;
+    font-weight: 600 !important;
+    font-family: 'Inter', sans-serif !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.swal2-confirm::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.swal2-confirm:hover::before {
+    left: 100%;
+}
+
+.swal2-confirm:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 30px rgba(59, 130, 246, 0.4) !important;
+}
+
+.swal2-confirm:focus {
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2) !important;
+}
+
+.swal2-cancel {
+    background: rgba(71, 85, 105, 0.6) !important;
+    border: 1px solid rgba(148, 163, 184, 0.3) !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 2rem !important;
+    color: #e2e8f0 !important;
+    font-weight: 500 !important;
+    font-family: 'Inter', sans-serif !important;
+    text-transform: none !important;
+    transition: all 0.3s ease !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.swal2-cancel:hover {
+    background: rgba(100, 116, 139, 0.8) !important;
+    border-color: rgba(148, 163, 184, 0.5) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+.swal2-cancel:focus {
+    box-shadow: 0 0 0 4px rgba(148, 163, 184, 0.2) !important;
+}
+
+/* Input styling */
+.swal2-input {
+    background: rgba(30, 41, 59, 0.8) !important;
+    border: 2px solid rgba(59, 130, 246, 0.2) !important;
+    border-radius: 12px !important;
+    color: #f1f5f9 !important;
+    padding: 1rem !important;
+    font-family: 'Inter', sans-serif !important;
+    transition: all 0.3s ease !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.swal2-input:focus {
+    border-color: #3b82f6 !important;
+    box-shadow:
+        0 0 0 4px rgba(59, 130, 246, 0.1),
+        0 4px 20px rgba(59, 130, 246, 0.2) !important;
+    outline: none !important;
+}
+
+.swal2-input::placeholder {
+    color: #64748b !important;
+}
+
+/* Select styling */
+.swal2-select {
+    background: rgba(30, 41, 59, 0.8) !important;
+    border: 2px solid rgba(59, 130, 246, 0.2) !important;
+    border-radius: 12px !important;
+    color: #f1f5f9 !important;
+    padding: 1rem !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Textarea styling */
+.swal2-textarea {
+    background: rgba(30, 41, 59, 0.8) !important;
+    border: 2px solid rgba(59, 130, 246, 0.2) !important;
+    border-radius: 12px !important;
+    color: #f1f5f9 !important;
+    padding: 1rem !important;
+    font-family: 'Inter', sans-serif !important;
+    resize: vertical !important;
+}
+
+/* Backdrop/overlay */
+.swal2-backdrop-show {
+    background: rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+/* Close button */
+.swal2-close {
+    color: #94a3b8 !important;
+    font-size: 2rem !important;
+    transition: all 0.3s ease !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.swal2-close:hover {
+    color: #f1f5f9 !important;
+    background: rgba(239, 68, 68, 0.2) !important;
+    transform: rotate(90deg) scale(1.1) !important;
+}
+
+/* Progress bar for timer */
+.swal2-timer-progress-bar {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%) !important;
+    height: 4px !important;
+}
+
+/* Loading spinner */
+.swal2-loading .swal2-confirm {
+    background: rgba(59, 130, 246, 0.6) !important;
+}
+
+/* Toast notifications */
+.swal2-toast {
+    background: rgba(15, 23, 42, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(59, 130, 246, 0.3) !important;
+    border-radius: 16px !important;
+    color: #e2e8f0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Validation message */
+.swal2-validation-message {
+    background: rgba(239, 68, 68, 0.1) !important;
+    color: #fca5a5 !important;
+    border: 1px solid rgba(239, 68, 68, 0.3) !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Custom animations */
+.swal2-show {
+    animation: swalSlideInDown 0.4s ease-out !important;
+}
+
+@keyframes swalSlideInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+}
+
+.swal2-hide {
+    animation: swalSlideOutUp 0.3s ease-in !important;
+}
+
+@keyframes swalSlideOutUp {
+    from {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0) scale(0.9);
+    }
+}
